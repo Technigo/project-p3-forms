@@ -2,11 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>Kajsas form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/18157e8d5f.js" crossorigin="anonymous"></script>
   </head>
+  
   <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+    <div class="theFormBorder border-xs-none" >
+      <div class="theForm">
+        <h2>Sign up</h2>
+        <form action="http://httpbin.org/anything" method="POST">
+        <span class="fas fa-envelope icon"></span>
+        <input type="email" id="email" name="email" value="kajsa@kajsa.se" required><br>
+        <span class="fas fa-lock icon"></span>
+        <input type="password" id="password" class="password" name="password" value="Your password" required><br>
+        <input type="submit" value="Create account" id="button">
+      </form> 
+    </div>
+  </div>
+
   </body>
 </html>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

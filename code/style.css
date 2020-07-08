@@ -1,9 +1,99 @@
-/* 
-If you can see a peach background, the css file is correctly linked. 
-Feel free to change or remove this styling! 
-We want you focus A LOT on the styling for this project. 
-*/
-
 body {
-  background-color: peachpuff;
+  background-color: #c0fdff;
+  font-family: "HelveticaNeueLt", "Helvetica", sans-serif;
 }
+
+h2 {
+  font-weight: normal;
+  font-style: normal;
+  color: #6c757d;
+  margin: 15px 0px 20px 0px !important;
+}
+
+span {
+  color: #adb5bd;
+}
+
+input {
+  width: 200px;
+  margin: 6px 6px 6px 6px !important;
+  color: #adb5bd;
+  border-radius: 0px;
+  font-size: 14px;
+  padding: 0px 0px 0px 0px;
+  border: none;
+  border-bottom: 2px solid #adb5bd;
+  outline: none;
+  appearance: none;
+}
+
+input:hover{
+  color: #6c757d;
+}
+
+.password{
+  padding-top: 10px;
+}
+
+form {
+  margin: 0px 0px 0px 0px;
+}
+
+#button{
+  font-size: 15px;
+  margin: 25px 0px 10px 0px !important;
+  width: 200px;
+  background-color: #4cc9f0;
+  border: none;
+  appearance: none;
+  border-radius: 25px;
+  color: white;
+  padding: 10px;
+  -webkit-box-shadow: 10px 13px 21px -3px rgba(214,214,214,1);
+  -moz-box-shadow: 10px 13px 21px -3px rgba(214,214,214,1);
+  box-shadow: 10px 13px 21px -3px rgba(214,214,214,1);
+}
+
+#button:hover{
+  background-color: #4361ee;
+}
+
+.icon:hover{
+  color: #6c757d;
+}
+
+.theFormBorder{
+border-radius: 5px;
+width: 310px;
+text-align: center;
+margin: auto;
+
+-webkit-box-shadow: 10px 13px 21px -3px rgba(143,140,143,1);
+-moz-box-shadow: 10px 13px 21px -3px rgba(143,140,143,1);
+box-shadow: 10px 13px 21px -3px rgba(143,140,143,1);
+}
+
+.theForm{
+  background-image: url("https://png.pngtree.com/png-clipart/20191122/original/pngtree-business-people-sitting-at-the-table-vector-laughing-friends-office-colleagues-png-image_5189991.jpg");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position:0px 220px;
+  
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+  width: 300px;
+  background-color: white;
+  padding-bottom: 145px;
+  padding-top: 15px;
+  }
+
+@media (max-width: 575.98px) {
+  .border-xs-none {
+    border: hidden !important; 
+    -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+  }
+   }
+
