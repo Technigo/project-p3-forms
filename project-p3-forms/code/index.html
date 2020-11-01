@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning German with MoViEs</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="dropdown-main">
+        <div>
+          <button class="droptxt-main"><a href="index.html">HOME</a></button>
+        </div>
+        <div class="dropdown-content-main">
+        </div>
+      </div>
+      <div class="dropdown-main">
+        <div>
+          <button class="droptxt-main"><a href="alldvds.html">DVD LIBRARY</a></button>
+        </div>
+        <div class="dropdown-content-main">
+          <a href="alldvds.html">ALL DVDs</a>
+          <a href="comedy.html">COMEDY</a>
+          <a href="action.html">ACTION</a>
+          <a href="romance.html">ROMANCE</a>
+          <a href="horror.html">HORROR</a>
+          <a href="other.html">OTHER</a>
+        </div>
+      </div>
+      <div class="dropdown-main">
+        <div>
+          <button class="droptxt-main"><a href="register.html">SIGN UP</a></button>
+        </div>
+        <div class="dropdown-content-main">
+        </div>
+      </div>
+      <div class="dropdown-main">
+        <div>
+          <button class="droptxt-main">
+            <a href="cart.html" class="with-icon">
+              <img src="shopping-cart-small.png" alt="shopping cart symbole">
+            </a>
+          </button>
+        </div>
+        <div class="dropdown-content-main">
+        </div>
+      </div>
+    </nav>
+
+    <div class="dropdown">
+      <div class="dropdown-logo">
+        <button class="dropbtn"></button>
+        <button class="droptxt">MENU</button>
+      </div>
+      <div class="dropdown-content">
+        <div class="dropdown-small">
+          <div>
+            <button class="droptxt-small">
+              <a href="index.html">HOME</a>
+            </button>
+          </div>
+          <div class="dropdown-content-small">
+          </div>
+        </div>
+        <!-- I had to mess up the order of the menu items. When I put the library first,
+            I cannot hover over the other items anymore, unless I make sure their "dropdown-content-small"
+            has the same length. Do you know why this might be? To see what I mean, you can
+            check the menu on the other items such as sign up (I haven't adjusted the HTML
+            there yet.-->
+        <div class="dropdown-small">
+          <div>
+            <button class="droptxt-small">
+              <a href="register.html">SIGN UP</a>
+            </button>
+          </div>
+          <div class="dropdown-content-small">
+          </div>
+        </div>
+        <div class="dropdown-small">
+          <div>
+            <button class="droptxt-small">
+              <a href="cart.html"><img src="shopping-cart-small.png"></a>
+            </button>
+          </div>
+          <div class="dropdown-content-small">
+          </div>
+        </div>
+        <div class="dropdown-small">
+          <div>
+            <button class="droptxt-small">
+              <a href="alldvds.html">DVD-LIBRARY</a>
+            </button>
+          </div>
+          <div class="dropdown-content-small">
+            <a href="alldvds.html">ALL DVDs</a>
+            <a href="comedy.html">COMEDY</a>
+            <a href="action.html">ACTION</a>
+            <a href="romance.html">ROMANCE</a>
+            <a href="horror.html">HORROR</a>
+            <a href="other.html">OTHER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="intro">
+    <section class="section-header">
+      <img src="dvd.png" alt="dvd icon">
+      <div class="header-title">
+        <h1>Watching movies to improve your language skills!</h1>
+      </div>
+    </section>
+    <section class="intro-text">
+      <div>
+        <h3 class="section-title">ABOUT THIS PAGE</h3>
+        <p>Hello and welcome to your free DVD-library. My name is Corina and I would like to share my DVDs with you.
+          I personally love learning languages and I am always looking for entertainig ways to do so.
+          Watching movies or tv shows in foreign languages is one of my favorite method to improve my
+          listening comprehension. Not so long ago, it was not easy to find movies online,
+          especially with subtitles in the target language. Nowadays it is much easier, thanks to streaming websites.
+          However, if you do not have a streaming subscription or unlimited internet data, you might prefer DVDs.
+          And if that's the case, I am glad to share my collection with you! </p>
+      </div>
+      <div>
+        <h3 class="section-title"> HOW IT WORKS</h3>
+        <p>All you need to do is chosing your favorite DVDs and email me your list, together with your address details.
+          I will take care of the shipping and send you to DVDs for your personal use. It is up to you if you want to
+          keep them,
+          share them with other german learners you might know, or sending them back to me so I can list them here
+          again.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <!-- what's new, List of recently added dvds-->
+    <h3>RECENTLY ADDED DVDs</h3>
+    <div class="DVD-card-holder">
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <div class="DVD-title-item">Nachts im Museum</div>
+        </div>
+        <img src="./images/nachtsim.jpg" alt="DVD-cover">
+        <div class="description">
+          Tagträumer Larry beginnt als Nachtwächter im Naturhistorischen
+          Museum. Doch statt eines gemütlichen Jobs erwartet ihn die grösste
+          Herausforderung seines Lebens. Die Exponate, darunter ausgestorbene
+          Tiere, Neandertaler, Gladiatoren, Cowboys und das gigantische Skelett
+          eines T-Rex, erwachen zum Leben und machen sich auf, das Museum zu
+          verwüsten.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN </div>
+          <div><span>Subtitles:</span><br> DE, EN, TR</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <div class="DVD-title-item">Spiel ohne Regeln</div>
+        </div>
+        <img src="./images/spielor.jpg" alt="DVD-cover">
+        <div class="description">
+          Nachdem er bei einer wilden Jagd durch Los Angelas von der Polizei
+          in volltrunkenem Zustand in der geklauten Nobelkarosse seiner Freundin
+          gestellt wird, landet der ehemalige Footballprofi und Star-Quarterback
+          Paul "Wrecking" Crewe, der wegen Spielmanipulation hochkant aus der Liga
+          gefolgen war, in einem knallharten Knast in der Einöde von Texas.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN</div>
+          <div><span>Subtitles:</span><br> DE, EN, TR</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <div class="DVD-title-item">Into the Blue </div>
+        </div>
+        <img src="./images/intotheblue.jpeg" alt="DVD-cover">
+        <div class="description">
+          Die vier jungen Taucher Jared, Sam, Bryce und Amanda entdecken ein
+          gesunkenes Goldschiff, aber auch ein Flugzeug randvoll mit Kokain.
+          Die Freunde schliessen einen Pakt, über beide Entdeckungen Stillschweigen
+          zu bewahren, damit sie den Fund des Schiffwracks amtlich für sich
+          registrieren lassen können, bevor rivalisierende Schatzjäger ihr Geheimnis
+          entdecken.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN</div>
+          <div><span>Subtitles:</span><br> DE, EN, TR</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <div class="DVD-title-item">Eiskalte Engel</div>
+        </div>
+        <img src="./images/eiskalte.jpg" alt="DVD-cover">
+        <div class="description">
+          Das Spiel heisst Verführung. Und wer sich verliebt, verliert...
+          Ein Film über Liebe, Lust und List: Die Stiefgeschwister Kathryn
+          und Sebastian rasen durch das Leben, als wäre es ein Spiel. Sie sind
+          reich, schön- und skrupellos. Gebrochene Herzen pflastern ihren Weg.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN</div>
+          <div><span>Subtitles:</span><br> DE</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <div class="DVD-title-item">Resident Evil</div>
+        </div>
+        <img src="./images/resevil.png" alt="DVD-cover">
+        <div class="description">
+          Mittlerweile sind fast 99% der Erdbevölkerung mit dem todbringenden
+          T-Virus der "Umbrella Corporation" identifiziert. Längst bieten die
+          Städte keien Sicherheit mehr, und nur eine kleine Gruppe Ueberlebender
+          hat sich zusammengetan, um in einem schwer bewaffneten Konvoi über die
+          verlassenen Highways von Nevada zu ziehen.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN</div>
+          <div><span>Subtitles:</span><br> DE</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <div class="DVD-title-item">Coyote Ugly</div>
+        </div>
+        <img src="./images/coyote.jpg" alt="DVD-cover">
+        <div class="description">
+          Die schöne Violet kommt aus der Provinz ins turbulente New York,
+          um ihren Traum als Songwriterin zu verwirklichen, doch das Musikbusiness
+          ist hart, vor allem wenn man wie Violet unter fürchterlichem Lampenfieber
+          leidet. In einer Bar trifft sie auf Kevin, dessen Charm sie kaum wiederstehen
+          kann.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN</div>
+          <div><span>Subtitles:</span><br> DE, EN, FR, ES, IT</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+      <div class="DVD-card">
+        <div class="DVD-title">
+          <span class="DVD-title-item">Pearl Harbor</span>
+        </div>
+        <img src="./images/pearlharbor.jpeg" alt="DVD-cover">
+        <div class="description">
+          Rafe und Danny sind von Kindsbeinen an die besten Freunde. Das Fliegen
+          ist für die beiden Piloten der U.S. Army die grosse Leidenschaft. Als Rafe
+          sich als Freiwilliger zu einem waghalsigen Kommando meldet, lässt er
+          nicht nur seinen besten Freund zurück, sondern auch seine grosse Liebe,
+          die hübsche Krankenschwester Evelyn.
+        </div>
+        <div class="DVD-audio">
+          <div><span class="audio-span">Audio:</span><br> DE, EN</div>
+          <div><span>Subtitles:</span><br> DE</div>
+        </div>
+        <button class="card-btn">ADD to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-footer-container">
+      <img src="logo_green.png" alt="logo">
+      <a href="mailto:info@learningbywatching.com" class="footer-text">Contact us</a>
+    </div>
+    <div class="icon-disclaimer">
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
