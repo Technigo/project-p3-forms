@@ -1,13 +1,13 @@
-# Project Name
+# Project 3 - HTML Forms 
 
-Replace this readme with your own information about your project.
+The assignment was to create a form using different types of forms and send the forms to httpbin. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I wanted to keep on working on my page from project 2. Since it is a page about sending DVDs for free, I needed some forms anyways in order to receive orders. I will deploy it via netlify and as far as I have read, netlify offers a server for forms as well. As the information I need to collect is mainly text, setting up the forms was not that challenging. In a next step I will use Javascript to allow visitors to add their favorite DVDs by simply clicking on the "add" button. 
+Last but not least, I will probably have to set up some database using MySQL - managing all DVDs directly on the page will be too tedious. So currently I am reading a bit about SQL. 
 
 ## View it live
 
-Have you deployed your project somewhere? Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+I will deploy it as soon as the Javascript part has been added as well. 
