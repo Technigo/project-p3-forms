@@ -2,11 +2,72 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>Sunflowers</title>
+    <link rel="Stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+    <form action="http://httpbin.org/anything" method="POST">
+      <fieldset>
+        <legend>Verschenke Sonnenblumen</legend>
+        
+        <div class="sender">
+          <label>Name</label>
+            <input type="text" name="name" required>
+          <label>Vorname</label>
+            <input type="text" name="vorname" required>
+          <label>E-Mail Adresse</label>
+            <input type="email" name="email" required>
+          <label>Passwort</label>
+            <input type="password" name="password" required>
+        </div>
+        
+          <div class="wrapper-col">
+            <p>Wie viele Sonnenblumen möchtest du verschenken?</p>
+            <div class="wrapper-row">
+                <label class="radiobutton-container">
+                    <input type="radio" name="answer" checked>
+                    <span class="custom-radio"></span> 1
+                </label>
+                <label class="radiobutton-container">
+                    <input type="radio" name="answer">
+                    <span class="custom-radio"></span> 3
+                </label>
+                <label class="radiobutton-container">
+                    <input type="radio" name="answer">
+                    <span class="custom-radio"></span> 5
+                </label>
+                <label class="radiobutton-container">
+                    <input type="radio" name="answer">
+                    <span class="custom-radio"></span> mehr:
+                    <select name="number">
+                      <option value="-"></option>
+                      <option value="7">7</option>
+                      <option value="9">9</option>
+                      <option value="11">11</option>
+                      <option value="25">25</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+      
+      <div class="receiver">
+        <label>Name des Empfängers</label>
+          <input type="text" name="namereceiver" required>
+        <label>Adresse des Empfängers</label>
+          <input type="text" name="adress" value="Strasse"required>
+          <input type="text" name="location" value="PLZ Ort"required> 
+        
+          <label>Nachricht an den Empfänger</label>
+            <textarea>Liebe/r ...</textarea>
+        
+      </div>
+
+        <button type="submit">Kaufen 🌻 </button>
+    
+      </fieldset>
+
+
+    </form>
   </body>
 </html>
