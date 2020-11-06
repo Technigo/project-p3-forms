@@ -1,13 +1,14 @@
-# Project Name
+# Kara Howes Forms Project
 
-Replace this readme with your own information about your project.
+The assignment was to code and produce a form for an internet site. We had to add the form action to send the content to httpbin.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
+I decided to code for two forms on my pre-existing website. Ths first form is part of the index.html and entitles the reader to a free version of a print I have produced, they just need to sign up with their email address.I found a simple and clean-looking form on the web and used this as a template for my form. I then had some more time so I decided to add a "Contact" page onto my website and there I add a form asking the readers to contact me with any queries, messages etc. I have used some basic HTML form coding, with text, email and textarea inputs. In the end. my website is now 6 pages, which has been quite difficult to focross-reference etc.
+If I had more time, I would've checked the HTML formatting.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+
 
 ## View it live
 
-Have you deployed your project somewhere? Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://naughty-keller-2cb01d.netlify.app
