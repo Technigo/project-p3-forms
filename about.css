@@ -65,8 +65,8 @@ header {
   nav {
     display: none;
     font-family: Nunito;
-    font-weight: bold;
     margin: 0 5px;
+    font-size: 18px;
   }
   
   nav a {
@@ -89,7 +89,7 @@ header {
     
   }
 
-  @media (min-width: 650px) {
+  @media (min-width: 750px) {
     
     header{
         justify-content: space-between;
@@ -104,14 +104,14 @@ header {
     }
     @media (min-width: 900px){
     
-        nav a {
-          display: inline-block;
-          padding: 5px;
-          text-decoration: none;
-          border-radius: 5px;
-          margin: 0 10px;
-          font-size: 18px;
-          color: black;
-          }
+    nav a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 10px;
+        font-size: 18px;
+        color: black;
+      }
     }
   
