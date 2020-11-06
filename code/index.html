@@ -2,11 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreativhang Checkout</title>
     <!-- dont forget the link to the css file -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- dont forget the meta tag for responsiveness -->
   </head>
+  
   <body>
     <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+    <header>  
+      <img src="img/Kreativhang_Logo.svg" alt="Kreativhang"/>
+      <h1>Freude schenken</h1>
+    </header>
+
+    <main>
+
+    <h2>Bestellung</h2>
+    <p>Geben Sie Ihre E-Mail-Adresse ein. </br>
+    An diese Adresse werden Ihnen Updates zum Bestellstatus gesendet. </p>
+
+    <form action="http://httpbin.org/anything" method="POST">
+
+    <label>
+      E-Mail
+      <input type="text" name="mail" placeholder="hello@example.ch" required>
+    </label>
+    
+    <div class="vertrag">
+      <label class="checkbox-container"> Ich stimme den Vertragsbedingungen zu
+      <input type="checkbox" required>
+      <span class="custom-checkbox"></span>
+      </label>
+    </div>
+
+    <button type="sumbit"> Weiter </button>
+    <button type="sumbit"> Direkt zu Paypal </button>
+
+
+    </form>
+
+    <h2>Nächste Schritte</h2>
+  
+      <p>
+      <span>Versandarten</span> </br>
+      Wählen Sie aus, wie Sie Ihre Bestellung erhalten möchten. </br>
+      </br>
+      <span>Zahlungs-Informationen</span> </br>
+      Wählen Sie eine Zahlungsmethode aus und geben Sie Ihre Zahlungsdaten ein. </br>
+      </br>
+      <span>Bestätigung der Bestellung</span> </br>
+      Geben Sie Ihre Bestellung auf. </br> Anschließend erhalten Sie eine Bestätigungs-E-Mail.
+      </p>
+
+    </main>
+
+    <footer>
+      <h3>
+        Kreativhang  //  Grafikbüro  //  Petra Hurschler  //  Dorfstrasse 34  //  6390 Engelberg  //  </br> petra@kreativhang.ch  //  079 419 37 72  //  © 2020  //  Impressum  //  Datenschutz
+      <h3>
+    </footer>
+
   </body>
 </html>
