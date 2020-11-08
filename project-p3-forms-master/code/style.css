@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600;900&display=swap');
+
+body {
+  background-color:	rgb(177, 212, 195);
+}
+
+h3 {
+  color:rgb(108, 164, 140);
+  font-family: 'Roboto Slab', serif; 
+  font-size: 50px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+h2 {  color:rgb(108, 164, 140);
+  font-family: 'Roboto Slab', serif; 
+  font-size: 25px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  padding-left: 30px;
+}
+
+p {
+ color: rgb(108, 164, 140);
+ font-family: 'Roboto Slab', serif;
+ font-size: 20px;
+ text-align: center;
+ margin-bottom: 5px;
+ margin-top: 5px;
+ padding: 20px; 
+}
+
+form {
+  text-align: center;
+}
+
+label { 
+  font-size: 20px; 
+  font-family: 'Roboto Slab', serif;
+  color:rgb(108, 164, 140);
+  padding: 30px; 
+  margin: 10px; 
+}
+
+input { 
+  font-size: 20px; 
+  font-family: 'Roboto Slab', serif; 
+  border: solid 5px rgb(140, 186, 172);
+  color: grey; 
+  margin: 10px; 
+}
+/* I want to style the password field right underneath the others-
+But I don't know how to it. Can you help? */
+
+button {
+  margin: 10px; 
+  font-size: 20px; 
+  font-family: 'Roboto Slab', serif; 
+  border: solid 5px rgb(140, 186, 172);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: papayawhip;
+}
+
+textarea {
+  font-size: 20px; 
+  font-family: 'Roboto Slab', serif; 
+  color: rgb(108, 164, 140);
+  cursor: text;
+}
+
+select {
+ margin-top: -10px; 
+ padding: 10px; 
+ font-family: 'Roboto Slab', serif;
+ font-weight: bolder;
+ font-size: 15px;
+ color: rgb(140, 186, 172);
+}
+
+@media (max-width: 668px) {
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px; 
+  }
+  textarea {
+    font-size: 12px;
+    width: 300px; 
+    height: 400px;  
+  }
+}
