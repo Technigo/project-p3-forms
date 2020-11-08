@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+ 
+<div class="menu">
+  <menu>
+    <a href="./index.html">Home</a>  
+    <a href="./2.arbeit.html">Arbeitserfahrung</a>
+    <a href="./3.ausbildung.html">Ausbildung</a>
+    <a href="./4.sprachen.html">Sprachen</a>
+    <a href="./5.weiteres.html">Weiteres</a>
+    <a href="./6.IT.html">IT Kentnisse</a>
+    <a href="./7.anhang.html">Anhang</a>
+  </menu>
+</div>
+
+<h1>ANHANG</h1>
+
+<form>
+  <action="https://httpbin.org/anything" method="POST"></action>
+  <fieldset>
+    <legend>Ihre Meinung</legend>
+
+<p>
+  <h3>Ihre Angaben</h3>
+  <div class="textfields">
+  <label for="fname">Name:</label><br>
+    <input type="text" id="fname" name="fname"<br><br>
+    <label for="mail">E-Mail:</label><br>
+    <input type="email" id="mail" name="mail"><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd" minlength="8">
+  </div>
+  </p>    
+
+    <h3>Wie gefällt Ihnen diese Seite</h3>
+    <div class="textfield">
+    <select id="opinion" name="opinion">
+      <option value="sehr gut">sehr gut</option>
+      <option value="gut">gut</option>
+      <option value="mässig">mässig</option>
+      <option value="not">gefällt mir nicht</option>
+    </select>
+  </div>
+
+<p>
+  <h3>Schreiben Sie einen Kommentar</h3>
+    <textarea name="message" rows="10" cols="70">Kommentar...</textarea>
+</p> 
+
+<p>
+  <h3>Wo sehen Sie meine Stärken?</h3>
+  <div class="radiobuttons">
+  <input type="radio" id="kreativ" name="strength" value="kreativ">
+  <label for="kreativ">kreativ</label><br>
+  <input type="radio" id="analytisch" name="strength" value="analytisch">
+  <label for="analytisch">analytisch</label><br>
+</div>
+</p>
+
+<p>
+  <h3>Wählen Sie, was am besten auf Sie zutrifft</h3>
+<div class="checkbox">
+  <input type="checkbox" id="op1" name="op1" value="Eins">
+  <label for="op1">I bin Eins</label><br>
+  <input type="checkbox" id="op2" name="op2" value="zwei">
+  <label for="op2">I bin Zwei</label><br>
+  <input type="checkbox" id="op3" name="op3" value="Drei">
+  <label for="op3">I bin Dre</label><br>
+</div>
+</p>
+
+<p>
+ <h3>Wie wahrscheinlich ist es, dass Sie mich einstellen?</h3>
+ <div class="strahl">
+ <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100
+  </form>
+</div> 
+</p>
+
+<p>
+  <button type="button" onclick="alert('Vielen Dank!')">Absenden</button>
+</p>
+  </fieldset>
+</form>
+
+<footer>
+<div class="pic">
+  ❤︎
+</div>
+
+<p>Email: xxx@gmx.ch</p>
+<p>Telefon: xxx xx xx xx</p>
+<p>Adresse: xxxxxx 8, 8636 Wald</p>
+</footer>
+
+ 
+  </body>
+</html>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+/* menu */
+
+menu {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 0px 20px;
+}
+  
+menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+  
+menu a:hover {
+    background:lightpink;
+    color: gray;
+}
+
+/* general */
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    height: 500px;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    color: gray;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    padding-left: 10px;
+}
+
+h2{
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left: 10px;
+}
+
+h3{
+  color: darkgrey;
+  font-size: 26px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left: 10px;
+}
+
+h4{
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left: 10px;
+}
+
+p{
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* footer */
+
+footer {
+  background-color: #efd4d3;
+  color: black;
+  font-size: 16px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 70px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.pic {
+  text-align: center;
+  font-size: 80px;
+  width: 120px;
+  height: 120px;
+  background-color: #e16560;
+  border-radius: 50%;
+
+}
+
+/* tablet */
+
+@media (min-width:668px) and (max-width: 1024px) {
+
+h1 {
+  font: 60px; 
+  line-height: 100%;
+  padding: 10px;
+}
+
+fieldset {
+  margin-left: 0px;
+  margin-top: 30px;
+}
+}
+
+/* phone */
+
+@media (max-width: 668px) {
+
+/* how can i "disable" an entire block in mobile? lets say i want the menu to show on desktop and tablet, but not mobile */
+
+h1 {
+  font-size: 45px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.footitext {
+  text-align: right; 
+  padding-left: 50px;
+}
+
+.pic {
+  height: 100px;
+  width: 190px;
+  font-size: 60px;
+}
+
+fieldset {
+  margin: 0px;
+  margin-top: 20px;
+  width: 50%;
+}
+/* isnt this supposed to move everything to the left? so the whitespice is gone? no matter what i do, the entire textfield doesnt seem to change. i can only change the content in it, but not the field as a whole*/
+
+
+legend {
+  font-size: 15px;
+}
+}
+
+/* form */
+
+fieldset {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 2px solid lightgrey;
+}
+
+fieldset:hover {
+  border: 2px solid #efd4d3;
+}
+
+legend {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 30px;
+}
+
+label {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 20px; 
+  margin: 12px;
+}
+
+textarea {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 15px;
+  border: 1px solid lightgray;
+  margin: 12px;
+}
+
+button {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 20px; 
+}
+
+input, select {
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 12px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 15px;
+  cursor: text;
+}
+
+textarea:hover {
+  border: 2px solid #efd4d3;
+}
+
+select {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  color: black;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 15px;
+  margin: 12px;
+}
+
+select:hover {
+  border: 2px solid #efd4d3;
+}
+
+button {
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #efd4d3;
+}
+
+.radiobuttons {
+  margin: 12px;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 12px;
+  cursor: pointer;
+}
+
+.strahl {
+  margin: 12px;
+  cursor: pointer;
+}
+
+.textfields {
+  margin: 12px;
+  cursor: pointer;
+}
+
+input:hover {
+  border: 2px solid #efd4d3;
+}
+
