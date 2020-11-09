@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Responsive Website Project</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta charset="utf-8" />
+  <title>Responsive Website Project</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
 </head>
+
 <body>
-    <header>
-      <div class="hamburger-dropdown-menu">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-        <div>
-        <div>
-          <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="./essays.html">ESSAYS</a></li>
-            <li><a href="./letters.html">LETTERS</a></li>
-          </ul>
-        </div>
-        </div>
-        </div>
+  <header>
+    <div class="hamburger-dropdown-menu">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+      <div>
+      <div>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./essays.html">ESSAYS</a></li>
+          <li><a href="./letters.html">LETTERS</a></li>
+        </ul>
       </div>
+      </div>
+      </div>
+    </div>
 
-      <nav class="desktop-menu">
-          <a href="./index.html">HOME</a>
-          <a href="./about.html">ABOUT</a>
-          <a href="./essays.html">ESSAYS</a>
-          <a href="./letters.html">LETTERS</a>
-      </nav>
-    </header>
+    <nav class="desktop-menu">
+      <a href="./index.html">HOME</a>
+      <a href="./about.html">ABOUT</a>
+      <a href="./essays.html">ESSAYS</a>
+      <a href="./letters.html">LETTERS</a>
+    </nav>
+  </header>
     
-    <main>
-      <div class="about-container">
-        <h1>About</h1>
-        <p>Hi my name is Alex and I like to write about the things I'm interested in.
-          <br>You will find a collection of essays, letters and potentially other random musings that I have compiled.</br>
-        </p>
-      </div>
+  <main>
+    <div class="about-container">
+      <h1>About</h1>
+      <p>Hi my name is Alex and I like to write about the things I'm interested in.<br>You will find a collection of essays, letters and potentially other random musings that I have compiled.</br>
+      </p>
+    </div>
 
-      <div class="essays-container">
-        <h1>Essays</h1>
-        <p>Here are my newest thoughts</p>
-      </div>
+    <div class="essays-container">
+      <h1>Essays</h1>
+      <p>Here are my newest thoughts</p>
+    </div>  
       
-      <div class="letters-container">
-        <h1>Letters</h1>
-        <p>Read my letters here. <br>I address different people and sometimes myself.</br></p>
+    <div class="letters-container">
+      <h1>Letters</h1>
+      <p>Read my letters here. <br>I address different people and sometimes myself.</br></p>
+    </div>  
+    <div class="newsletter-container">
+      <h1>Newsletter</h1>
+      <div class="newsletter-content">
+      <p>Subscribe to my Newsletter here. <br>I promise I won't spam you.</p>
+      <form action="https://httpbin.org/anything" method="POST">
+        <fieldset>
+          <label>
+            <div>First Name</div>
+            <input type="text" name="firstName" required>
+          </label>
+
+          <label>
+            <div>Email</div>
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            <input type="checkbox" name="newsletterCheckbox" required>
+            <span>Yes, I want your Newsletter!</span>
+          </label>
+
+          <button type="submit">Sign me up!</button>
+
+        </fieldset>
+      </form>
       </div>
+    </div>   
+  </main>
 
-      <div class="newsletter-container">
-        <h1>Newsletter</h1>
-        <div class="newsletter-content">
-        <p>Subscribe to my Newsletter here. <br>I promise I won't spam you.</p>
-        <form action="https://httpbin.org/anything" method="POST">
-          <fieldset>
-            <label>
-              <div>First Name</div>
-              <input type="text" name="firstName"/>
-            </label>
-
-            <label>
-              <div>Email</div>
-              <input type="email" name="email"/>
-            </label>
-
-            <label>
-              <input type="checkbox" name="newsletterCheckbox" />
-              <span>Please send me your newsletter!</span>
-            </label>
-
-            <button type="submit">Yes I want your Newsletter</button>
-
-          </fieldset>
-        </form>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-        <menu>
-          <a href="./faq.html">FAQ</a>
-          <a href="./contact.html">Contact</a>
-        </menu>
-    </footer>
-  </body>
+  <footer>
+    <menu>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact</a>
+    </menu>
+  </footer>
+</body>
 </html>

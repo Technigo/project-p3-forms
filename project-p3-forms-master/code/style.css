@@ -221,7 +221,7 @@ fieldset {
 }
 
 fieldset input {
-  border: none;
+  border: transparent;
   line-height: 25px;
   margin: 5px 0;
 }
@@ -236,6 +236,17 @@ fieldset span {
 
 fieldset button {
   margin-top: 5px;
+  width: 20%;
+}
+
+/*** Form Validation ***/
+
+fieldset input[type=text], [type=email]:valid {
+  background-color: #cfe3ff;
+}
+
+fieldset input[type=text], [type=email]:invalid {
+  border-color: crimson;
 }
 
 /*** Footer ***/
@@ -268,7 +279,7 @@ footer a:hover {
   }
   
   .desktop-menu {
-      display: flex;
+    display: flex;
   }
 
   .hamburger-dropdown-menu {
