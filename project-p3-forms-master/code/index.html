@@ -30,6 +30,26 @@
           Passwort
           <input type="password" name="passwort" required placeholder="mindestens 8 Zeichen"/> <!-- Icon Auge einfügen -->
         </label>
+        <label>Wie alt bist du?
+          <div class="wrapper-row">
+            <label class="radiobutton-container">20-30
+            <input type="radio" name="answer" checked>
+            <span class="custom-radio"></span>
+          </label>
+          <label class="radiobutton-container">30-40
+            <input type="radio" name="answer">
+            <span class="custom-radio"></span>
+          </label>
+          <label class="radiobutton-container">40-50
+            <input type="radio" name="answer">
+            <span class="custom-radio"></span>
+          </label>
+          <label class="radiobutton-container">50+
+            <input type="radio" name="answer">
+            <span class="custom-radio"></span>
+          </label>
+        </div>
+      </label>
         <label>
           Wähle drei deiner Zielbranchen aus:
           <select name="branche">
@@ -86,27 +106,9 @@
           <input type="text" placeholder="Nur ausfüllen, wenn du bei Branche Andere gewählt hast"> <!-- nur required wenn das Feld "Andere" angeklickt, Validation JavaScript-->
         </label> 
         <div class="wrapper-row">
-          <label class="radiobutton-container">20
-            <input type="radio" name="answer" checked>
-            <span class="custom-radio"></span>
-          </label>
-          <label class="radiobutton-container">40
-            <input type="radio" name="answer">
-            <span class="custom-radio"></span>
-          </label>
-          <label class="radiobutton-container">60
-            <input type="radio" name="answer">
-            <span class="custom-radio"></span>
-          </label>
-          <label class="radiobutton-container">100
-            <input type="radio" name="answer">
-            <span class="custom-radio"></span>
-          </label>
-        </div>
-        <div class="wrapper-row">
           <label class="checkbox-container">Möchest du dich für den Newsletter anmelden?
-            <input type="checkbox" checked>
-            <span class="custom-checkbox"></span>
+             <input type="checkbox" checked>
+             <span class="custom-checkbox"></span>
           </label>
         </div>
         <button type="submit">

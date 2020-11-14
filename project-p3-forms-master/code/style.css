@@ -7,7 +7,7 @@ We want you focus A LOT on the styling for this project.
 body {
   background-color: #7e8a97;
   font-family:'Handlee', cursive;
-}
+ }
 
 * {
   box-sizing: border-box;
@@ -27,10 +27,14 @@ form {
  margin: 0 auto; 
 }
 
+h3 {
+  margin-top: 0;
+}
+  
 h2 {
-  font-size: 25px;
-  margin-top: 0; 
-  margin-bottom: 0; 
+ font-size: 25px;
+ margin-top: 0; 
+ margin-bottom: 0; 
 }
 
 fieldset {
@@ -42,7 +46,7 @@ fieldset {
   justify-content: center;
   margin: 10px; 
   padding: 10px 0px 10px 10px;
-  box-shadow: 0 3px 5px 0 rgba(50, 50, 93, 0.15), 0 6px 8px 0 rgba(112, 157, 199, 0.15); 
+  box-shadow: 0 3px 5px 3px rgba(50, 50, 93, 0.15), 0 6px 8px 3px rgba(112, 157, 199, 0.15); 
 }
 
 label {
@@ -89,19 +93,22 @@ input:hover {
 .wrapper-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
 }
 
 .radiobutton-container {
-  width: 50px;
+  width: 80px;
+  margin: 0;
 }
 
 
 .radiobutton-container {
   display: block;
   position: relative;
-  padding-left: 25px;
-  margin: 10px 5px; 
-  font-size: 16px;
+  padding-left: 15px;
+  margin: 5px 5px; 
+  font-size: 14px;
   user-select: none;
 }
 
@@ -111,6 +118,10 @@ input:hover {
  cursor: pointer;
  height: 0;
  width: 0; 
+}
+
+label.radiobutton-container {
+  padding-left: 25px; 
 }
 
 .custom-radio {
@@ -230,5 +241,7 @@ button:hover {
   background-color: darkolivegreen;
 }
 
+/** add validation later**/
 
+/** add media queries later on **/ 
 
