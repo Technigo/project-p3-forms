@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form for jobsurfer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <form action="https://httpbin.org/anything" method="post">
+      <h3>Du möchtest Jobsurfer werden?</h3>
+      <h2>Erstelle dein Profil</h2>
+      <fieldset>
+        <label>
+          Vorname
+          <input type="text" name="vorname" required placeholder="Hans"/>
+        </label>
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Mustermann"/>
+        </label>
+        <label>
+          E-Mail
+          <input type="text" name="email" required placeholder="hans.mustermann@gmail.com"/>
+        </label>
+        <label>
+          Passwort
+          <input type="password" name="passwort" required placeholder="mindestens 8 Zeichen"/> <!-- Icon Auge einfügen -->
+        </label>
+        <label>
+          Wähle drei deiner Zielbranchen aus:
+          <select name="branche">
+            <option value="Gesundheit">Gesundheit</option>
+            <option value="Bildung">Bildung</option>
+            <option value="Entwicklungszusammenarbeit">Entwicklungszusammenarbeit</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Tourismus">Tourismus</option>
+            <option value="IT/Coding">IT/Coding</option>
+            <option value="Handwerk">Handwerk</option>
+            <option value="Gastronomie">Gastronomie</option>
+            <option value="Detailhandel">Detailhandel</option>
+            <option value="Banken">Banken</option>
+            <option value="Versicherung">Versicherung</option>
+            <option value="Journalismus">Journalismus</option>
+            <option value="Asyl/Migration">Asyl/Migration</option>
+            <option value="Andere">Andere</option>
+          </select>
+          <select name="branche">
+            <option value="Gesundheit">Gesundheit</option>
+            <option value="Bildung">Bildung</option>
+            <option value="Entwicklungszusammenarbeit">Entwicklungszusammenarbeit</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Tourismus" selected>Tourismus</option>
+            <option value="IT/Coding">IT/Coding</option>
+            <option value="Handwerk">Handwerk</option>
+            <option value="Gastronomie">Gastronomie</option>
+            <option value="Detailhandel">Detailhandel</option>
+            <option value="Banken">Banken</option>
+            <option value="Versicherung">Versicherung</option>
+            <option value="Journalismus">Journalismus</option>
+            <option value="Asyl/Migration">Asyl/Migration</option>
+            <option value="Andere">Andere</option>
+          </select>
+          <select name="branche">
+            <option value="Gesundheit">Gesundheit</option>
+            <option value="Bildung">Bildung</option>
+            <option value="Entwicklungszusammenarbeit">Entwicklungszusammenarbeit</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Tourismus">Tourismus</option>
+            <option value="IT/Coding">IT/Coding</option>
+            <option value="Handwerk" selected>Handwerk</option>
+            <option value="Gastronomie">Gastronomie</option>
+            <option value="Detailhandel">Detailhandel</option>
+            <option value="Banken">Banken</option>
+            <option value="Versicherung">Versicherung</option>
+            <option value="Journalismus">Journalismus</option>
+            <option value="Asyl/Migration">Asyl/Migration</option>
+            <option value="Andere">Andere</option>
+          </select>
+        </label>
+        <label>
+          Welche? 
+          <input type="text" placeholder="Nur ausfüllen, wenn du bei Branche Andere gewählt hast"> <!-- nur required wenn das Feld "Andere" angeklickt, Validation JavaScript-->
+        </label> 
+        <div class="wrapper-row">
+          <label class="radiobutton-container">20
+            <input type="radio" name="answer" checked>
+            <span class="custom-radio"></span>
+          </label>
+          <label class="radiobutton-container">40
+            <input type="radio" name="answer">
+            <span class="custom-radio"></span>
+          </label>
+          <label class="radiobutton-container">60
+            <input type="radio" name="answer">
+            <span class="custom-radio"></span>
+          </label>
+          <label class="radiobutton-container">100
+            <input type="radio" name="answer">
+            <span class="custom-radio"></span>
+          </label>
+        </div>
+        <div class="wrapper-row">
+          <label class="checkbox-container">Möchest du dich für den Newsletter anmelden?
+            <input type="checkbox" checked>
+            <span class="custom-checkbox"></span>
+          </label>
+        </div>
+        <button type="submit">
+          Profil erstellen
+        </button>
+      </fieldset>
+
+
+      
+    </form>
+    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+  </body>
+</html>
