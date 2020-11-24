@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>yksi - forms</title>
+    <!-- dont forget the link to the css file -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+      <header>
+      <div class="hamburger"> 
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <img src="/pictures/yksi-square-icon.png" alt="yksi logo">
+      <nav>
+        <a href="#"> ABOUT </a> 
+        <a href="#"> KITCHEN </a> 
+        <a href="#"> INTERIOR DESIGN </a>
+        <a href="/contact.html/"> CONTACT </a>
+
+      </nav>
+      </header>
+
+    <!-- Build your site as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+      
+    <h4> SEND A MESSAGE </h4>
+
+    <div class="your-message-container">
+    
+      <form action="http://httpbin.org/anything"  method="POST">        
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="yourName" placeholder="Your Name...">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="col-75">
+		      <input name="email" type="email" placeholder="you@domain.com" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
+          </div>
+        </div>
+
+        <label class="checkbox-container">By checking this box you agree with the storage and handling of your data by this website.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+
+      </form>
+  
+    </div>
+
+  
+      <footer>
+        <div class="footer">
+          <p>
+          © 2020 yksi - nordic kitchen. <br>
+          hei@yksi.one
+          </p>  
+        </div>
+      </footer>
+  
+    </body>
+
+  </html>
