@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Nadelöhr_form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="http://httpbin.org/anything" method="POST">
+        <h2>Bezahlung</h2>
+
+        <fieldset>
+
+            <label>
+                <span>Vorname</span>
+                <input type="text" name="Vorname" placeholder="Jenny" required>
+            </label>
+
+            <label>
+                <span>Nachname</span>
+                <input type="text" name="Nachname" placeholder="Fehr" required>
+            </label>
+
+            <label>
+                <span>Strasse</span>
+                <input type="text" name="Strasse" placeholder="Baumstrasse" required>
+            </label>
+
+            <label>
+                <span>Postleitzahl</span>
+                <input type="text" name="Postleitzahl" placeholder="8800" required>
+            </label>
+
+            <label>
+                <span>Ort</span>
+                <input type="text" name="Postleitzahl" placeholder="8800" required>
+            </label>
+
+            <label>
+                <span>Handy-Nr.</span>
+                <input type="tel" name="Handy-Nr." placeholder="079 000 00 00" required>
+            </label>
+
+            <label>
+                <span>E-mail</span>
+                <input type="email" name="email" placeholder="jenny@example.com" required>
+            </label>
+                
+            <label>
+                <span class="label-text">Land</span>
+                <select name="Land">
+                    <option value="CH">Schweiz</option>
+                    <option value="DE">Deutschland</option>
+                </select>
+            </label>
+
+            <label>
+                <span class="label-text-Währung">Währung</span>
+                <select name="Währung">
+                    <option value="CHF">CHF</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </label>
+
+        </fieldset>
+
+        <input id="bestätigen" type="checkbox"/><label for="bestätigen">Ich akzeptiere die allgemeinen Geschäftsbedingungen</label>
+
+        <button class="button-reset" type="reset">Eingaben zurücksetzen</button>
+        <button class="button-submit" type="submit">zum Versand</button>
+    </form>    
+</body>
 </html>
