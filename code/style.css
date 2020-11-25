@@ -1,9 +1,290 @@
-/* 
-If you can see a peach background, the css file is correctly linked. 
-Feel free to change or remove this styling! 
-We want you focus A LOT on the styling for this project. 
-*/
+/* GENERAL */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: peachpuff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  background-color: #FBF8F5;
+  color: #414042;
+}
+
+
+/* TEXT */
+   
+h1 {
+  font-family: 'Shadows Into Light';
+  color: #414042;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: 'Shadows Into Light';
+  color: #414042;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+legend {
+  font-family: 'Shadows Into Light';
+  font-size: 22px;
+  color: #7C3668;
+}
+
+
+
+/* HEADER */
+
+header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #414042;
+  border-radius: 5px;
+}
+
+header img {
+  width: 180px;
+  align-self: center;
+  margin-right: auto;
+}
+
+header a img {
+  height: 18px;
+  width: 18px;
+  display: none;
+  margin-left: 20px
+}
+
+header img:hover {
+  animation-name: scale;
+  animation-duration: 0.6s;
+}
+
+nav {
+  display: none; 
+}
+
+nav a {
+  color: #414042;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 5px;
+  padding: 8px 10px;
+  border: 2px solid transparent;
+}
+
+nav a:hover {
+  border: 2px solid #414042;
+  border-radius: 5px;
+} 
+
+
+
+/* FORM  */
+
+form {
+  background-color: white;
+  border: 2px solid #F5F2F0;
+  border-radius: 4px; 
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+fieldset {
+  background-color: #E8D5D5;
+  box-shadow: 3px 3px 5px #8C8C8C;
+  padding: 15px;
+  /* border-radius: 4px; */
+  border: 2px solid #DEC0C1;
+    /* border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; */
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  margin-bottom: 20px;
+}
+
+
+input {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #414042;
+  background-color: white;
+  padding: 10px 5px;
+  border: none;
+  outline-color: #4A586E;
+}
+
+input:valid {
+  border: 2px solid #748700;
+}
+
+label {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+label:last-child {
+  border-bottom: none;
+}
+
+span {
+  width: 30%;
+  text-align: right;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8C8C8C;
+  opacity: 1; /* Firefox */
+  font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #8C8C8C;
+  font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #8C8C8C;
+  font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+
+select {
+  width: 100%;
+  border: none;
+  color: #414042;
+  padding: 5px 5px;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  */
+  cursor: pointer;
+}
+
+
+.optionscheckbox {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.boxes {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.checkbox input {
+  width: 20px;
+  margin-bottom: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.checkbox label {
+  align-items: baseline;
+  padding-left: 5px;
+}
+
+
+button {
+  background-color: #414042;
+  color: #FBF8F5;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 5px;
+  margin-top: 15px;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 3px 3px 5px #8C8C8C;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FBF8F5;
+  color: #414042;
+  border: 2px solid #414042;
+}
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  header {
+    justify-content: flex-end;
+  }
+  nav {
+    display: flex;
+  }
+  header a img {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    justify-content: flex-end;
+  }
+  nav {
+    display: flex;
+  }
+  header a img {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+
+/* SCALING EFFECTS  */
+
+@keyframes scale {
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
 }

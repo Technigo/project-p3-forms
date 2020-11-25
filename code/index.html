@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
-  </body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms project</title>
+    <link rel="stylesheet" type"text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel='icon' href='Logo1.png' type='image/x-icon'/ >
+</head>
+
+
+<body>
+  <header>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <img src="LOGO-RVB.png" alt="Logo Coding Club">
+    <nav>
+        <a href="./index.html">home</a>
+        <a href="https://www.bfh.ch/codingclub">mehr info</a>
+        <a href="https://www.epfl.ch/education/education-and-science-outreach/fr/promotion-education-sciences/promotion-des-sciences/coding-club-for-girls/">noch mehr info</a>
+    </nav>
+    <a href="https://www.instagram.com/codingclubforgirls/"><img src="Icon_Instagram.png"</img></a>
+  </header>
+
+  <form action="http://httpbin.org/anything" method="POST">
+    <h1>&#10024 Anmeldung "Coding Club for Girls" 👩🏽‍💻</h1>
+
+    <fieldset>
+      <legend>Allgemeine Info</legend>
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" placeholder="Dein Vor- und Nachname" required>
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="Deine Emailadresse" required>
+      </label>
+      <label>
+        <span>Adresse</span>
+        <input type="text" name="adresse" placeholder="Deine Adresse" required>
+      </label>
+      <label>
+        <span>PLZ</span>
+        <input type="number" min="1000" max="9999" name="plz" placeholder="Deine Postleitzahl" required>
+      </label>
+      <label>
+        <span>Ort</span>
+        <input type="text" name="ort" placeholder="Dein Wohnort" required>
+      </label>
+      <label>
+        <span>Telefon</span>
+        <input type="tel" name="Telefonnummer" placeholder="Deine Telefonnummer" required>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Stufe</legend>
+      <label>
+        <span>Alter</span>
+        <select name="Alter">
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+      </label>
+      <label>
+        <span>Schulklasse</span>
+      
+        <select name="Schulklasse">
+          <option value="5.">5.</option>
+          <option value="6.">6.</option>
+          <option value="7.">7.</option>
+          <option value="8.">8.</option>
+          <option value="9.">9.</option>
+        </select>
+      </label>
+    </fieldset>
+
+
+    <fieldset class="checkbox">
+      <legend>Workshops</legend>
+      <label>
+        <span>Wähle deine gewünschten Workshops aus</span>
+        <div class="optionscheckbox"> 
+          <div class="boxes">
+            <input type="checkbox" id="scratch" name="Scratch" value="scratch">
+            <label for="scratch" style="float:right">Scratch</label>
+            </div>
+            <div class="boxes">
+            <input type="checkbox" id="cybersecurity" name="Cyber Security" value="cybersecurity">
+            <label for="cybersecurity" style="float:right">Cyber Security</label>
+            </div>
+            <div class="boxes">
+            <input type="checkbox" id="python" name="Python" value="python">
+            <label for="python" style="float:right">Python</label>
+            </div>
+            <div class="boxes">
+            <input type="checkbox" id="webdesign" name="Webdesign" value="webdesign">
+            <label for="python" style="float:right">Webdesign</label>
+            </div>
+      </label>
+    </fieldset>  
+
+    <h2>Wir freuen uns auf dich! &#127881</h2>
+        <button type="submit">Anmelden</button>
+      
+  </form>
+
+</body>
