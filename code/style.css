@@ -5,5 +5,217 @@ We want you focus A LOT on the styling for this project.
 */
 
 body {
-  background-color: peachpuff;
+    font-family: Poppins;
+    background-color: #f8fbfb;
+    color: #525f7f;
+    padding: 40px;
 }
+
+form {
+    border: 1px solid #e8e8fb;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Poppins;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: 1200;
+}
+
+h3 {
+    font-size: 15px;
+    margin-top: 0px;
+    text-align: center;
+    font-family: Poppins;
+}
+
+fieldset {
+    border: none;
+    padding: 0%;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15), 0 4px 6px 0 rgba(112, 157, 199, 0.15);
+}
+
+label {
+    display: flex;
+    border-bottom: 1px solid #f0f5fa;
+    align-items: center;
+}
+
+span {
+    width: 30%;
+    text-align: right;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+input {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 0;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  
+button {
+    background-color: #F6F350 ;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+}
+.radiobutton-container{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 5px;
+    font-size: 16px;
+    user-select: none;
+}
+
+.radiobutton-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+.costum-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:  19px;
+    width: 19px;
+    background-color: lightpink;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.radiobutton-container:hover input ~ .costum-radio {
+    background-color: lightgreen;
+}
+
+.radiobutton-container input:checked ~ .costum-radio {
+    background-color: black;
+}
+
+.costum-radio:after {
+    content:"";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    display:  none;
+}
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 5px;
+    font-size: 16px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height:0;
+    width: 0
+}
+
+.costum-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: lightpink;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-container:hover input ~ .costum-checkbox {
+    background-color:lightgreen ;
+}
+
+.checkbox-container input:checked ~ .costum-checkbox {
+     background-color: black;
+}
+
+.costum-checkbox:after {
+    content: ""; 
+    position: absolute;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    top: 5px;
+    left: 7px;
+    transform: rotate(45deg);
+    display: none;
+}
+.checkbox-container input:checked ~ .costum-checkbox:after {
+    display: block;
+}
+
+.checkbox-container input:focus + .costum-checkbox {
+outline: #333 auto 4px;
+}
+
+
+.radiobutton-container input:checked ~ .costum-radio:after {
+    display: block;
+}
+
+.radiobutton-container input:focus + .costum-radio {
+    outline: #333 auto 4px;
+}
+
+
+
+/*** PLACEHOLDER ***/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #aab7c4;
+    }
+::-moz-placeholder { /* Firefox 19+ */
+    color: #aab7c4;
+    }
+:-ms-input-placeholder { /* IE 10+ */
+    color: #aab7c4;
+    }
+:-moz-placeholder { /* Firefox 18- */
+    color: #aab7c4;
+    }
+
+* {
+    box-sizing: border-box;
+}
+

@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      </style>
+      
     <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>contact us</title>
+<link rel="stylesheet" href="style.css">    <!-- dont forget the meta tag for responsiveness -->
   </head>
   <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+
+    <form action="https://httpbin.org/anything" method="POST">
+  
+<form>
+  <h2>The Cat Working Space</h2>
+  <h3> Erstelle deinen Account</h3>
+  <fieldset>
+  <label>
+        <span>Name</span>
+        <input type="text" name="name" placeholder="Vorname" />
+  </label>
+    
+  <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="mail@paperpirate.com"/>
+  </label>
+
+ 
+
+  <label>
+    <span>Passwort</span> 
+    <input type="password" name="password" autocomplete="current-password" required size="8" pattern="[0-9a-fA-F]{4,8}"
+    title="Versuch's nochmal. Dein Passwort sollte mindestens 4 Zeichen haben, maximal 8 Zeichen." 
+  </label> 
+</fieldset>
+
+<p>Newsletter abonnieren</p>
+
+  <label class=radiobutton-container>Deutsch
+    <input type="radio" name="answer" checked>
+    <span class="costum-radio"></span>
+</label>  
+<label class=radiobutton-container>English
+    <input type="radio" name="answer">
+    <span class="costum-radio"></span>
+</label>  
+</label>
+
+<div class="wrapper-row">
+  <p>Themen</p>
+  <label class="checkbox-container">Katzen
+      <input type="checkbox" checked>
+      <span class="costum-checkbox "></span>
+    </label>
+
+      <label class="checkbox-container">New Work
+        <input type="checkbox" checked>
+        <span class="costum-checkbox "></span>
+      </label>
+
+      <label class="checkbox-container">Events
+        <input type="checkbox" checked>
+        <span class="costum-checkbox "></span>
+      </label>
+  
+
+<button type="submit">Los geht's 🤟🏼</button>
+
+  <!-- <label>
+      <span>Country</span> 
+      <select name="country">
+      <option value="SE">Sweden</option>
+      <option value="KS">Klausstrasse</option>
+      <option value="ZH">Zürich</option>
+      </select>
+  </label>
+  -->
+  
+  </form>
+     <!-- 2 x Text fields
+      1 x A password field
+      1 x Set of radio buttons
+      1 x Set of checkboxes
+      1 x Submit button
+     Build your site up as you want it! 
+     Make sure to use the form element and try to 
+     send that form to httpbin by adding 
+     
+     action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+
+
   </body>
 </html>
