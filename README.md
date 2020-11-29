@@ -12,4 +12,4 @@ I used different types of input types according to what was asked to specify by 
 
 ## View it live
 
-Have you deployed your project somewhere? Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+cherry-on-top-form.netlify.app
