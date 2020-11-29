@@ -12,4 +12,4 @@ I used different types of input types according to what was asked to specify by 
 
 ## View it live
 
-cherry-on-top-form.netlify.app
+https://cherry-on-top-form.netlify.app
