@@ -1,0 +1,157 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Shade&family=Quicksand&display=swap');
+
+
+body {
+  background-color: rgb(194, 216, 245);
+  font-family: 'Quicksand', sans-serif; 
+}
+
+header{
+  overflow: hidden;
+  background:white;
+  padding: 20px;
+  color:black;
+ }
+
+ .cherry-logo{
+  float: left;
+  width: 60px;
+  padding: 10px 10px 0px 0px;
+ }
+
+
+h1{
+  font-family: 'Bungee Shade', cursive;
+  padding: 15px 0;
+}
+
+h2{
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+h3{
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 20px;
+  padding: 0 0 0 20px;
+}
+
+h4{
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+form{
+  padding: 0px 20px;
+}
+
+input, label{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+textarea{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  resize: none;
+}
+
+.submit-button{
+  font-size: 20px;
+}
+
+.reset-button{
+  font-size: 10px;
+}
+
+p{
+  font-size: 20px;
+  padding: 0 0 10px 20px;
+}
+
+
+footer{
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.social-icon{
+  height: 35px;
+  padding: 10px;
+  float: none;
+  padding: 10px 20px;
+}
+
+.footer-h2{
+  font-size: 13px;
+}
+
+.p-footer{
+  font-size: 13px;
+}
+
+/* For tablet: */
+@media (min-width: 600px) {
+  .flex-item-home{
+    flex: 45%;
+    }
+    .flex-item-rs{
+      flex:45%;
+    }
+    .flex-item-r{
+      flex:100%;
+    }
+    h2{
+      font-size: 28px;
+    }
+
+    h3{
+      font-size: 25px;
+    }
+    .footer-h2{
+      font-size: 18px;
+    }
+
+    .social-icon{
+      height: 35px;
+      padding: 10px;
+      float: none;
+      padding: 10px 20px;
+      }
+
+    .img-recipe-mobile, .img-recipe-desktop{
+        display: none;
+      }
+
+    .img-recipe-tablet{
+      display: block;
+    }
+}
+
+
+/* For desktop: */
+@media (min-width: 768px) {
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+  .footer-h2{
+    font-size: 20px;
+  }
+
+  .social-icon{
+      height: 35px;
+      padding: 10px;
+      float: right;
+}
