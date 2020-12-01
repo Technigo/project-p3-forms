@@ -41,28 +41,37 @@ h3{
 
 h4{
   font-family: 'Bungee Hairline', cursive;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+h5{
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 17px;
 }
 
 form{
   padding: 0px 20px;
 }
 
-input, label{
+
+input, label, select, time{
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 textarea{
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   resize: none;
 }
 
 .submit-button{
   font-size: 20px;
+  border: 2px dotted red;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .reset-button{
@@ -76,7 +85,6 @@ p{
 
 
 footer{
-  width: 100%;
   background: white;
   color: black;
   padding: 5px;
@@ -100,15 +108,6 @@ footer{
 
 /* For tablet: */
 @media (min-width: 600px) {
-  .flex-item-home{
-    flex: 45%;
-    }
-    .flex-item-rs{
-      flex:45%;
-    }
-    .flex-item-r{
-      flex:100%;
-    }
     h2{
       font-size: 28px;
     }
@@ -126,14 +125,6 @@ footer{
       float: none;
       padding: 10px 20px;
       }
-
-    .img-recipe-mobile, .img-recipe-desktop{
-        display: none;
-      }
-
-    .img-recipe-tablet{
-      display: block;
-    }
 }
 
 
