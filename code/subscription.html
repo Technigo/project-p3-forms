@@ -70,12 +70,12 @@
 
       <label>
         <span>Postal Code:</span>
-        <input type="text" name="zip" required minlength="4" maxlength="5" placeholder="8001">
+        <input type="number" name="zip" required min="1000" max="99999" placeholder="8001">
       </label>
 
       <label>
         <span>City:</span>
-        <input type="email" name="city" required minlength="2" placeholder="Zurich">
+        <input type="text" name="city" required minlength="2" placeholder="Zurich">
       </label>
 
       <label>
@@ -113,7 +113,7 @@
   <fieldset>
     <legend>Select your subscription type</legend>  
     <label>
-      <input type="radio" name="subscriptionType" value="weekly"> Weekly
+      <input type="radio" name="subscriptionType" value="weekly" required> Weekly
     </label>
     <label>
       <input type="radio" name="subscriptionType" value="biweekly"> Bi-Weekly
