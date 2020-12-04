@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreis4 Flower Shop - Order Flowers Online</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header> 
+    <nav class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </nav>
+
+    <menu>
+        <a href="./index.html">Home</a>
+        <a href="./our-flowers.html">Flowers</a>
+        <a href="./subscription.html">Subscription</a>
+        <a href="./faqs.html">FAQs</a>
+        <a href="./about.html">About</a>
+    </menu>
+
+    <div class="heading-desktop">
+      <h1>Welcome to Kreis4 Flowers</h1>
+      <h2>Fresh Flowers All Year Round</h2>
+  </div>
+  <div class="heading-mobile">
+      <h1>Kreis4 Flowers</h1>
+  </div>
+</header>
+
+<main>
+  <h1>Subscription</h1>
+  <h2>Subscribe here to our flower delivery service</h2>
+</main>
+
+<form action="http://httpbin.org/anything" method="POST">
+  <h3>Contact Details</h2>
+  <div class="formParent">
+    <div class="formBlock">
+      <label>
+        <span>First name:</span>
+        <input type="text" name="firstName" required minlength="2" placeholder="Tina">
+      </label>
+
+      <label>
+        <span>Last name:</span>
+        <input type="text" name="lastName" required minlength="2" placeholder="Turner">
+      </label>
+
+      <label>
+        <span>Email Address:</span>
+        <input type="email" name="email" required placeholder="tina@turner.com">
+      </label>
+
+      <label>
+        <span>Phone number:</span>
+        <input type="tel" name="phoneNumber" pattern="^\+(?:[0-9] ?){6,25}[0-9]$" placeholder="+41 123456789" required>
+      </label>
+    </div>
+
+    <div class="formBlock">
+      <label>
+        <span>Street:</span>
+        <input type="text" name="street" required minlength="4" placeholder="Best Street 10">
+      </label>
+
+      <label>
+        <span>Postal Code:</span>
+        <input type="text" name="zip" required minlength="4" maxlength="5" placeholder="8001">
+      </label>
+
+      <label>
+        <span>City:</span>
+        <input type="email" name="city" required minlength="2" placeholder="Zurich">
+      </label>
+
+      <label>
+        <span>Country:</span>
+        <select name="country" required>
+          <option value="CH">Switzerland</option>
+          <option value="DE">Germany</option>
+          <option value="AT">Austria</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  
+  <h3>Flower Composition</h3>
+  <fieldset>
+    <legend>Choose your favorite flower</legend>  
+    <label>
+      <input type="checkbox" name="flowers" value="lily"> Lily
+    </label>
+    <label>
+      <input type="checkbox" name="flowers" value="peony"> Peony
+    </label>
+    <label>
+      <input type="checkbox" name="flowers" value="tulip"> Tulip
+    </label>
+  
+    <p class="note">
+      Select as many as you like.
+      Not sure which one to select?
+      <a href="our-flowers.html">Check our overview!</a>
+    </p>
+  </fieldset>
+  
+  <h3>Subscription Type</h3>
+  <fieldset>
+    <legend>Select your subscription type</legend>  
+    <label>
+      <input type="radio" name="subscriptionType" value="weekly"> Weekly
+    </label>
+    <label>
+      <input type="radio" name="subscriptionType" value="biweekly"> Bi-Weekly
+    </label>
+    <label>
+      <input type="radio" ame="subscriptionType" value="monthly"> Monthly
+    </label>
+  </fieldset>
+
+  <h3>Subscription Details</h3>
+  <div class="formParent">
+    <div class="formBlock">
+      <label>
+        Select a bouquet size:
+        <select name="bouquetSize">
+          <option value="s">5 Flowers</option>
+          <option value="m">9 Flowers</option>
+          <option value="l">15 Flowers</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="formBlock">
+      <label>
+        Start of the subscription:
+        <input type="week" name="startWeek"  min="2021-W01" max="2021-W08" required>
+      </label>
+    </div>
+  </div>
+
+  <div class="formParent">
+    <button type="submit">Submit Your Inquiry</button>
+  </div>
+</form>
+
+<img src="./img/lily.jpg" width="400" height="300" style="margin:20px;">
+</body>
+</html>
