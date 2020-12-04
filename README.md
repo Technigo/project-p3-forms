@@ -26,4 +26,6 @@ Since I don't feel too comfortable using flexbox but wanted to try anyways, I'm 
 
 ## View it live
 
+https://pensive-gates-21033f.netlify.app/subscription.html
+
 
