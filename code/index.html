@@ -2,11 +2,78 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
+    <title>Band Contact Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
   </head>
+
   <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+    <form action="http://httpbin.org/anything" method="POST">
+      <h2>Contacting the photographer</h2>
+       <fieldset>
+        <label>
+          <span class="labeltext">Bandname</span>
+          <input type="text" name="bandname" placeholder="The name of your band" />
+        </label>
+
+            <div class="wrapper-row">
+              <p>Anrede:</p>
+              <label class="radiobutton-container">Ms.
+                <input type="radio" name="anrede">
+                <span class="custom-radio"></span>
+              </label>
+
+              <label class="radiobutton-container">Mr.
+                <input type="radio" name="anrede">
+                <span class="custom-radio"></span>
+              </label>
+
+              <label class="radiobutton-container" checked>Mx.
+                <input type="radio" name="anrede">
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+        
+        <label>
+          <span class="labeltext">Contact</span>
+          <input type="text" name="contactName" placeholder="John Doe" />
+        </label>
+
+        <label>
+          <span class="labeltext">E-Mail</span>
+          <input type="email" name="email" placeholder="johndoe@humbug.ch" required/>
+        </label>
+    
+         <label>
+          <span class="labeltext">City</span>
+          <input type="text" name="city" placeholder="Humbugien" />
+        </label>
+    
+        <label>
+          <span class="labeltext">Postal Code</span>
+          <input type="text" name="postalCode" placeholder="1234" />
+        </label>
+    
+        <label>
+          <span class="labeltext">What is your wish?</span>
+          <select name="shootingType">
+            <option value="bandShooting">Exculsive Bandshooting in the cold</option>
+            <option value="concertShooting">Exclusive Bandshooting while doing something concertcy</option>
+            <option value="nothingReally">Beeing accidently on a photo while doing something convertcy</option>
+            <option value="nothingReally2">Just talk to you because you seem like a nice guy</option>
+    
+          </select>
+        </label>
+    
+        <label>
+          <span class="labeltext">Just leaving a message...</span>
+          <input type="textarea" />
+        </label>
+
+      </fieldset>
+   
+      <button type="submit">Hurray, on it's way!</button>
+
+    </form>
   </body>
 </html>
