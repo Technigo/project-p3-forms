@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Textildesign</title>
+  <!-- dont forget the link to the css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+  <header>
+    <button class="hamburger" tabindex="0" aria-labelledby="navigation" aria-expanded="false" aria-haspopup="true">
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+    </button>
+
+    <div class="hero-section">
+      <h1>Anna Leutert</h1>
+      <h2>Handweberin, Textil- und Farbdesignerin</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="navigation" role="menu" aria-hidden="true">
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="index.html">Home</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a class="active" role="menuitem" href="about.html">Über Mich</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="aktuell.html">Aktuell</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="portfolio.html">Portfolio</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="blog.html">Tipps & Tricks</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="contact.html">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <!--über mich / vorstellen -->
+    <section class="about-container">
+      <section class="text-container">
+        <div>
+          <h3>Mit viel Begeisterung weben.</h3>
+          <p>Mein ganzes Leben schon bin ich fasziniert von bunten Fäden, und was daraus gemacht werden kann. Ich fühle
+            mich wohl beim Weben, das ist meine Welt. Ich Stricke auch sehr viel. Mit bunten Fäden, alles mit bunten
+            Fäden. Und da kommt schon das nächste..... bunt. Farbe! Farbe und wie sie wirkt, und warum sie so wirkt, und
+            welches ist an dieser Stelle die Beste aller Farben. Das beschäftigt mich. Das Intressiert mich. Das ist
+            meine Welt. Das ist mein Beruf.</p>
+          <p>Ich bin Mutter von 4 tollen Töchtern. </p>
+        </div>
+      </section>
+      <!--werdegang -->
+      <section class="werdegang">
+        <h3>Werdegang</h3>
+        <!--tabelle -->
+        <section class="tabelle">
+          <div class="line">
+            <div class="year">
+              1981 - 1984
+            </div>
+            <div>
+              Ausbildung, Handweberin EFZ, BFF Bern
+            </div>
+          </div>
+          <div class="line">
+            <div class="year">
+              1984
+            </div>
+            <div>
+              Praktikum, Leinenweberei Bern
+            </div>
+          </div>
+          <div class="line">
+            <div class="year">
+              1984 - 1986
+            </div>
+            <div>
+              Studium, Textildesign FA, Schweizerische Textilfachschule, Wattwil
+            </div>
+          </div>
+        </section>
+        <div class="picture">
+          <img src="img/portrait.JPG" alt="portrait">
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- newsletter -->
+    <section class="newsletter-container">
+
+    </section>
+    <!-- instagram -->
+    <section class="insta-container">
+
+    </section>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>

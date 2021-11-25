@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Textildesign</title>
+  <!-- dont forget the link to the css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+  <header>
+    <button class="hamburger" tabindex="0" aria-labelledby="navigation" aria-expanded="false" aria-haspopup="true">
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+    </button>
+
+    <div class="hero-section">
+      <h1>Textildesign</h1>
+      <h2>Anna Leutert</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="navigation" role="menu" aria-hidden="true">
+      <li role="none" tabindex="-1">
+        <a class="active" role="menuitem" href="index.html">Home</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="about.html">Über Mich</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="aktuell.html">Aktuell</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="portfolio.html">Portfolio</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="blog.html">Tipps & Tricks</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="contact.html">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+
+    <!--über mich / vorstellen -->
+
+    <section class="welcome-container">
+      <section class="text-container">
+        <h3>Mit viel Begeisterung weben.</h3>
+        <p>Mein ganzes Leben schon bin ich fasziniert von bunten Fäden und was daraus gemacht werden kann. Ich fühle
+          mich
+          wohl beim Weben, das ist meine Welt.</p>
+        <a href="about.html" class="button"> Mehr zu meiner Person</a>
+      </section>
+      <div class="picture">
+        <img src="img/portrait.JPG" alt="portrait" style="width:100%;max-width:500px;">
+      </div>
+    </section>
+
+    <!-- shop -->
+
+    <section class="shop-container">
+      <h2>Shop</h2>
+      <div>
+        <a href="" class="shop-cart">
+          <img src="img/turin.jpg" alt="Bild Turin">
+          <p>Webanleitung Turin für Kissen</p>
+        </a>
+        <a href="" class="shop-cart">
+          <img src="img/turin.jpg" alt="Bild Turin">
+          <p>Webanleitung Turin für Kissen</p>
+        </a>
+        <a href="" class="shop-cart">
+          <img src="img/turin.jpg" alt="Bild Turin">
+          <p>Webanleitung Turin für Kissen</p>
+        </a>
+      </div>
+      <section class="text-container">
+        <p>
+          Im online Shop finden Sie diverse Webanleitungen. Die Sie als PDF Datei bestellen können.
+        </p>
+        <a href="shop.html" class="button"> Mehr </a>
+      </section>
+    </section>
+
+    <!-- aktuell -->
+
+    <section class="news-container">
+      <h2>Aktuell</h2>
+      <div>
+        <img src="img/aktuell.jpg" alt="Bild Aktuell">
+        <div class="news-text">
+          <p>Alle Daten zu aktuellen Kursen und Ausstellungen.
+          </p>
+          <a href="aktuell.html" class="button"> Mehr</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+
+    <section class="portfolio-container">
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <img src="img/portfolio/decke01.jpg" alt="decke01" class="photo">
+        <img src="img/portfolio/decke02.jpg" alt="decke02" class="photo">
+        <img src="img/portfolio/decke03.jpg" alt="decke03" class="photo">
+        <img src="img/portfolio/decke04.jpg" alt="decke04" class="photo">
+        <img src="img/portfolio/decke05.jpg" alt="decke05" class="photo">
+        <img src="img/portfolio/decke06.jpg" alt="decke06" class="photo">
+      </div>
+
+      <a href="portfolio.html" class="button"> Mehr</a>
+    </section>
+
+    <!-- tipps / tricks -->
+
+    <section class="blog-container">
+      <h2>Tipps & Tricks</h2>
+
+      <a href="blog.html" class="button"> Mehr</a>
+    </section>
+  </main>
+
+  <footer>
+    <!-- newsletter -->
+    <section class="newsletter-container">
+
+    </section>
+    <!-- instagram -->
+    <section class="insta-container">
+
+    </section>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
