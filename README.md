@@ -12,7 +12,8 @@ Features that overall would increase the appeal of the page and / or would be fu
 
 - Language switch
 - An improved and mobile-friendly footer
-- The log in form as a modal box instead of a whole new page.
+- The log in form as a modal box instead of a whole new page
+- Making the menu more accessible
 - A better content structure
 - A search bar
 - Another type of layout other than the responsive card layout
