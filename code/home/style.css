@@ -35,7 +35,7 @@ body {
     width: 180px;
   }
 
-  #logo {
+  #login {
   color:#005ea8;
   }
   
@@ -168,13 +168,10 @@ body {
     margin-top: 0;
   }
 
-  /*** Opacity with Card ***/
+  /*** Opacity with 2. Card Row ***/
 
   .thumbnail {
     opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -190,37 +187,43 @@ body {
     text-align: center;
   }
   
-  picture:hover .image {
+  .card-content:hover .thumbnail {
     opacity: 0.3;
   }
   
-  .picture:hover .middle {
+  .card-content:hover .middle {
     opacity: 1;
   }
   
   .text {
-    background-color: #04AA6D;
+    background-color: #005ea8;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+    border-radius: 5px;
   }
   
-  /*** Footer ***/
-  
-  footer {
-    display: flex;
-    background-color: #005ea8;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding: 10px;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-  }
+ /*** Footer ***/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #005ea8;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer div {
+  padding: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
   
   /*** Media Queries ***/
   
