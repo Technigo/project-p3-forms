@@ -1,0 +1,313 @@
+/*** Body ***/
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  
+  body a {
+    color: #da542e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16.5px;
+  }
+  
+/*** End Body ***/
+
+/*** Header ***/
+  
+  header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 16px;
+    opacity: 0.98;
+  }
+  
+  header img {
+    width: 180px;
+  }
+
+  #login {
+  color:#005ea8;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    width: 25px;
+    height: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .hamburger-lines {
+    background-color: black;
+    width: 30px;
+    height: 1px;
+    border-radius: 4px;
+    padding: 1px;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .hamburger-menu:hover {
+    cursor: pointer;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: bold;
+  }
+
+  /*** End Header ***/
+
+  /*** Animation ***/
+  
+  .mobile-menu-open .hamburger-menu .hamburger-lines:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .mobile-menu-open .hamburger-menu .hamburger-lines:nth-child(2) {
+    display: none;
+  }
+  
+  .mobile-menu-open .hamburger-menu .hamburger-lines:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  
+  /** End Animation **/
+  
+  /*** Main Content ***/
+  
+  .welcome {
+    display: flex;
+    padding-top: 10px;
+  }
+  
+  .welcome img {
+    width: 100%;
+  }
+  
+  .welcome-text h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .welcome-text {
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  
+  img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card {
+    background: white;
+    margin-bottom: 20px;
+  }
+  
+  .card a {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  
+  .card {
+    flex: 0 1 calc(25% - 1em);
+  }
+  
+  .card-content {
+    padding: 1.4em;
+  }
+  
+  .card-content h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  .card-content:hover h2 {
+    color: #da542e;
+    
+  }
+
+  .card-content:hover span {
+    display:none
+}
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .fact {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+
+  .fact h2 {
+    margin-top: 0;
+  }
+
+  /*** Opacity with 2. Card Row ***/
+
+  .thumbnail {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .card-content:hover .thumbnail {
+    opacity: 0.3;
+  }
+  
+  .card-content:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #005ea8;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 5px;
+  }
+  
+ /*** Footer ***/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #005ea8;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer div {
+  padding: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+  
+  /*** Media Queries ***/
+  
+  @media (min-width: 650px) {
+    header {
+      justify-content: space-between;
+    }
+  
+    nav {
+      display: inline-block;
+    }
+  
+    .hamburger-menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    nav {
+      display: none;
+    }
+  
+    .mobile-menu-open nav {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      background-color: whitesmoke;
+      font-size: 25px;
+    }
+  
+    nav a {
+      padding: 10px;
+    }
+  
+    #login {
+      color: black;
+    }
+  
+    nav a:hover {
+      color: #005ea8;
+    }
+  
+    #login:hover {
+      color: #005ea8;
+    }
+  }
+  
+  @media screen and (min-width: 650px) {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .card {
+      flex: 0 1 calc(50% - 1em);
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    .card {
+      flex: 0 1 calc(25% - 1em);
+    }
+  }
+  
+  @media screen and (max-width: 660px) {
+    .card {
+      flex: 0 1 calc(50% - 1em);
+    }
+  }
+  
+  @media screen and (max-width: 660px) {
+    .card {
+      flex: 0 1 calc(100% - 1em);
+    }
+  
+    .cards {
+      margin-right: -15px;
+    }
+  }  
