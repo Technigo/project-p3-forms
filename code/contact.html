@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta lang="de">
+  <title>Textildesign</title>
+  <!-- dont forget the link to the css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- dont forget the meta tag for responsiveness -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+  <header>
+    <button class="hamburger" tabindex="0" aria-labelledby="navigation" aria-expanded="false" aria-haspopup="true">
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+      <div class="hamburger-lines"></div>
+    </button>
+
+    <div class="hero-section">
+      <h1>Kontakt</h1>
+      <h2>Anna Leutert</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="navigation" role="menu" aria-hidden="true">
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="index.html">Home</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="about.html">Über Mich</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="aktuell.html">Aktuell</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="portfolio.html">Portfolio</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a role="menuitem" href="blog.html">Tipps & Tricks</a>
+      </li>
+      <li role="none" tabindex="-1">
+        <a class="active" role="menuitem" href="contact.html">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+
+    <!--kontakt -->
+
+    <section class="contact-container">
+      <h3></h3>
+      <p></p>
+      <section class="contact-form">
+        <form action="https://httpbin.org/anything" method="post">
+          <h2>Kontakt</h2>
+          <fieldset>
+            <label for="anrede">
+              <span>Anrede</span>
+              <input type="radio" id="frau" name="anrede" value="Frau">
+              <label for="frau">Frau</label>
+              <input type="radio" id="herr" name="anrede" value="Herr">
+              <label for="herr">Herr</label>
+              <input type="radio" id="andere" name="anrede" value="Andere">
+              <label for="andere">Andere</label>
+            </label>
+            <label for="name">
+              <span>Name</span>
+              <input type="text" name="name">
+            </label>
+            <label for="email">
+              <span>Email</span>
+              <input type="email" name="email">
+            </label>
+            <label for="anfrageart">
+              <span>Anfrageart</span>
+              <select id="anfrageart">
+                <option value="">Fragen rund ums Weben</option>
+                <option value="">Webauftrag</option>
+                <option value="">Webprobleme</option>
+              </select>
+            </label>
+            <label for="textarea">
+              <span>Nachricht</span>
+              <textarea name="textarea" id="" rows="2" cols="5"></textarea>
+            </label>
+          </fieldset>
+          <button type="submit">Abschicken</button>
+        </form>
+
+        <form action=""></form>
+
+
+
+
+      </section>
+
+    </section>
+  </main>
+
+  <footer>
+    <!-- newsletter -->
+    <section class="newsletter-container">
+
+    </section>
+    <!-- instagram -->
+    <section class="insta-container">
+
+    </section>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
