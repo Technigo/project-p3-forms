@@ -2,11 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
-    <!-- dont forget the link to the css file -->
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JO Gommiswald</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
   </head>
   <body>
-    <!-- Build your site up as you want it! Make sure to use the form element and try to send that form to httpbin by adding action="https://httpbin.org/anything" and method="POST" to your form tag. -->
+    <div class="background">
+      <h1>JO GOMMISWALD</h1>
+      <nav>
+        <a class="blue" href="./kontakt.html">Kontakt</a>
+        <div class="dropdown">
+          <a class="drop blue" href="./index.html">Gruppen<i class="arrow"></i></a>
+          <div class="dropdown-content">
+            <div><a class="blue" href="#jo">JO</a></div>
+            <div><a class="blue" href="#piccolo">Piccolo</a></div>
+            <div><a class="blue" href="#kondi">Kondition</a></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <span>
+      <p>Die JO Gommiswald vermittelt den Kindern im Alter von 4 - 15 Jahren die Freude am Schneesport.
+      Wir bieten Ski und Snowboard als Breiten- und Rennsport sowie ein Konditionstraining an.
+      Von 4 - 7 Jahren gehen die Kinder in die Piccolo. Ab 7 Jahren gehören sie der JO an.</p>
+    </span>
+    <section class="gruppen">
+      <aside id="jo"></aside>
+      <img src="./images/jo.jpeg">
+      <div class="about">
+        <h3>JO</h3>
+        <p>Wir treffen uns jeweils am Samstag Morgen in Amden am Pistenrand zum Training.<br>
+          Dabei wird in folgende Gruppen aufgeteilt:<br><br>
+          Ski Fun-Gruppe: Teilnahme an den Trainings-, sowie am LinthCUP- und Clubrennen<br>
+          Ski Funrace-Gruppe: Teilnahme an den Trainings, an allen LinthCUP- und Clubrennen<br>
+          Ski Renn-Gruppe: Teilnahme an den Trainings, Lizenz- oder Animationsrennen, inklusive LinthCUP- und Clubrennen,
+          Teilnahme am Trainingslager im Herbst und an den Trainingsweekends erwünscht<br>
+          Snowboard: Für Kinder, die selbständig Snowboardfahren können und weiter an ihrer Fahrtechnik arbeiten möchten</p>
+        <div class="coach">
+          <div>Ansprechsperson:<br>
+            <a class="black" href="./kontakt.html">Urs Kaufmann</a>
+          </div>
+          <img src="./images/urs.jpeg" style="width:80px;height:80px;">
+        </div>
+      </div>
+    </section>
+    <section class="gruppen">
+      <aside id="piccolo"></aside>
+      <img src="./images/piccolo.jpeg">
+      <div class="about folge">
+        <h3>Piccolo</h3>
+        <p>Das Piccoloteam gibt den Kindern die Gelegenheit, den spielerischen Umgang mit den Skis zu üben.
+          In kleinen Gruppen wird an der Technik gefeilt, es gibt Spiele und einen feinen Znüni. Und natürlich
+          darf das Highlight nie fehlen: Wir singen zusammen mit Surfing-Johny, unserem Maskottchen, das Piccololied.<br><br>
+          Dieses Angebot gilt für alle Kinder, ob Anfänger oder kleine Rennfahrer.
+          Auch Nichtmitglieder des Skiclub sind willkomen.</p><br><br>
+        Piccolo-Lied<br><br>
+        <audio controls style="width: 230px; height: 40px;">
+          <source src="./images/clublied.mp3" type="audio/mpeg">
+        </audio>
+        <div class="coach">
+          <div>Ansprechsperson:<br>
+            <a class="black" href="./kontakt.html">Jérôme Stillhard</a>
+          </div>
+          <img src="./images/jerome.jpeg" style="width:80px;height:80px;">
+        </div>
+      </div>
+    </section>
+    <section class="gruppen">
+      <aside id="kondi"></aside>
+      <img src="./images/kondi.jpeg">
+      <div class="about">
+        <h3>Konditionstraining</h3>
+        <p>Das ganze Jahr über findet am Donnerstag Abend von 18.15 - 20.00 Uhr das Konditionstraining statt.
+          Wir treffen uns beim Eingang der grossen Turnhalle. Dort trainieren wir die Beweglichkeit in verschiedenen 
+          Parcours und üben uns in Mannschafts-Spielen.<br><br>
+          Von Mai bis Oktober sind wir draussen auf dem roten Platz, von November bis April und bei sehr schlechtem
+          Wetter sind wir drinnen in der grossen Halle.</p>
+        <div class="coach">
+          <div>Ansprechsperson:<br>
+            <a class="black" href="./kontakt.html">Lisa Mattes</a>
+          </div>
+          <img src="./images/lisa.jpeg" style="width:80px;height:80px;">
+        </div>
+      </div>
+    </section>
+    <footer>
+      @ Skiclub Gommiswald
+    </footer>
   </body>
 </html>

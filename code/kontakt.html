@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JO Gommiswald</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="blue" href="./index.html">HOME</a>
+    </header>
+    <h2>Ansprechpartner</h2>
+    <section class="kontakt">
+      <div class="name">
+        <h4>Urs Kaufmann</h4>
+        <p>Chef JO<br>
+          <a class="none" href="tel:0041792078221">+41 79 207 82 21</a><br>
+          <a class="none" href="mailto:jo-chef@scgommiswald.ch">jo-chef@scgommiswald.ch</a>
+        </p>
+      </div>
+      <div class="name">
+        <h4>Jérôme Stillhard</h4>
+        <p>Chef Piccolo<br>
+          <a class="none" href="tel:0041765837520">+41 76 583 75 20</a><br>
+          <a class="none" href="mailto:piccolo@scgommiswald.ch">piccolo@scgommiswald.ch</a>
+        </p>
+      </div>
+      <div class="name">
+        <h4>Lisa Mattes</h4>
+        <p>Chefin Konditionstraining<br>
+          <a class="none" href="tel:0041763802806">+41 76 380 28 06</a><br>
+          <a class="none" href="mailto:aktuar@scgommiswald.ch">aktuar@scgommiswald.ch</a>
+        </p>
+      </div>
+    </section>
+    <section class="form">
+      <div class="anmeldung">
+        <h2>Anmeldung</h2>
+        <span>
+          <p>Wir freuen uns auf eine spannende und unfallfreie Saison mit euch!</p>
+        </span>
+        <form action="https://httpbin.org/anything" method="post">
+          <fieldset>
+            <legend>Angaben zum Kind</legend>
+            <div class="first-row">
+              <label for="vn">Vorname *</label>
+            </div>
+            <div class="second-row">
+              <input type="text" id="vn" name="vorname" required>
+            </div>
+            <div class="first-row">
+              <label for="ln">Nachname *</label>
+            </div>
+            <div class="second-row">
+              <input type="text" id="ln" name="nachname" required>
+            </div>
+            <div class="first-row">
+              <label for="gd">Geburtsdatum *</label>
+            </div>
+            <div class="second-row">
+              <input type="date" id="gd" name="datum" required>
+            </div>
+            <div class="first-row">
+              <label for="sa">Sportart</label>
+            </div>
+            <div class="second-row">
+              <select id="sa" name="sportart">
+                <option value="ski">Ski</option>
+                <option value="snowboard">Snowboard</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Angaben zu den Eltern</legend>
+            <div class="first-row">
+              <label for="ad">Adresse</label>
+            </div>
+            <div class="second-row">
+              <input type="text" id="ad" name="adresse">
+            </div>
+            <div class="first-row">
+              <label for="pl">PLZ</label>
+            </div>
+            <div class="second-row">
+              <input type="text" id="pl" name="plz">
+            </div>
+            <div class="first-row">
+              <label for="or">Ort</label>
+            </div>
+            <div class="second-row">
+              <input type="text" id="or" name="ort">
+            </div>
+            <div class="first-row">
+              <label for="te">Telefon *</label>
+            </div>
+            <div class="second-row">
+              <input type="tel" id="te" name="telefon" required>
+            </div>
+            <div class="first-row">
+              <label for="em">Email</label>
+            </div>
+            <div class="second-row">
+              <input type="email" id="em" name="email">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Gewünschtes Training</legend>
+            <label>
+              <input type="radio" name="gruppe" value="Fun">
+              Fun-Gruppe
+            </label>
+            <label>
+              <input type="radio" name="gruppe" value="Funrace">
+              Funrace-Gruppe
+            </label>
+            <label>
+              <input type="radio" name="gruppe" value="Race">
+              Renn-Gruppe
+            </label><br>
+            <label>
+              <input type="checkbox" name="training1" value="Mittwoch">
+              Mittwoch
+            </label>
+            <label>
+              <input type="checkbox" name="training2" value="Samstag">
+              Samstag
+            </label>
+            <label>
+              <input type="checkbox" name="training3" value="Weekend">
+              Weekend
+            </label>
+          </fieldset>
+          <input type="submit" value="abschicken">
+        </form>
+      </div>
+      <div class="logo">
+        <img src="./images/clublogo.png" style="width:370px; height:120px;">
+      </div>
+    </section>
+    <footer>
+      @ Skiclub Gommiswald
+    </footer>
+  </body>
+</html>
