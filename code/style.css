@@ -1,9 +1,239 @@
-/* 
-If you can see a peach background, the css file is correctly linked. 
-Feel free to change or remove this styling! 
-We want you focus A LOT on the styling for this project. 
-*/
-
+* {
+  box-sizing: border-box;
+}
+  
 body {
-  background-color: peachpuff;
+  font-family: 'Roboto', Verdana, Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/gruppe.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+}
+
+h1 {
+  font-family: 'Segoe UI', Verdana, Calibri, sans-serif;
+  font-size: 50px;
+  color: rgb(22, 22, 75);
+}
+
+nav {
+  line-height: 2;
+}
+
+.arrow {
+  border: solid rgb(22, 22, 75);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  margin: 0 7px;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.drop {
+  border: none;
+}
+.dropdown-content {
+  display: none;
+  background-color: rgb(220, 220, 220, 0.5);
+  text-align: center;
+  width: 90px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header {
+  text-align: right;
+  padding: 30px 50px 0 0;
+  background-image: url(./images/gruppe.jpeg);
+  background-size: cover;
+  height: 80px;
+}
+
+a.black:link, a.black:visited {
+  color: black;
+}
+
+a.blue:link, a.blue:visited {
+  font-family: 'Segoe UI', Verdana, Calibri, sans-serif;
+  font-size: 18px;
+  color: rgb(22, 22, 75);
+  text-decoration: none;
+}
+
+a.none:link, a.none:visited {
+  color: black;
+  text-decoration: none;
+}
+
+span {
+  text-align: center;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.gruppen, .kontakt, .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.gruppen img {
+  max-height: 500px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.about {
+  align-self: center;
+  padding: 0 35px;
+}
+
+.coach {
+  margin: 60px 0 25px 0;
+  display: flex;
+}
+.coach img {
+  margin-left: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.kontakt {
+  border-bottom: solid;
+}
+
+.name {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+h4, legend {
+  font-weight: 500;
+}
+
+.anmeldung {
+  margin: 15px 8%;
+}
+
+form {
+  margin: 35px 0;
+  padding: 0 25px;
+}
+
+.first-row, .second-row {
+  width: 100%;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding-top: 25px;
+  border: none;
+}
+
+input[type=text], input[type=date], input[type=tel], input[type=email], select {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 3px;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 15px;
+}
+
+input[type=radio], input[type=checkbox] {
+  margin-bottom: 25px;
+}
+
+input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  border-width: 0.8px;
+  border-radius: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.logo {
+  background-color: rgb(45, 65, 200);
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: rgb(45, 65, 200);
+  color: whitesmoke;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+
+  .background {
+    background-position: 100% 35%;
+  }
+
+  .gruppen {
+    flex-direction: row;
+    height: 700px;
+  }
+
+  .gruppen img {
+    max-height: 100%;
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .folge {
+    order: -1;
+  }
+
+  .kontakt {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .form {
+    flex-direction: row;
+  }
+
+  label {
+    padding-left: 15px;
+  }
+
+  .first-row {
+    float: left;
+    width: 30%;
+  }
+
+  .second-row {
+    float: left;
+    width: 70%;
+  }
+
+  .logo img {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
 }
