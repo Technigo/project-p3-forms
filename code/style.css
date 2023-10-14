@@ -1,9 +1,5 @@
-/* 
-If you can see a peach background, the css file is correctly linked. 
-Feel free to change or remove this styling! 
-We want you focus A LOT on the styling for this project. 
-*/
+/* Here in the css file you'll write your styling. make sure to link the css file to the html file. If it's linked correctly you should see a light blue background. */
 
 body {
-  background-color: peachpuff;
+  background-color: lightblue;
 }
