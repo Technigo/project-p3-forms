@@ -1,0 +1,242 @@
+/* Here in the css file you'll write your styling. make sure to link the css file to the html file. If it's linked correctly you should see a light blue background. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.top-header {
+  font-family: "Lucida Handwritting";
+  text-transform: uppercase;
+  font-size: 50pt;
+  text-align: center;
+  color: #023a02;
+  margin-top: 40px;
+}
+.menu {
+  font-family: "Arial";
+  text-transform: uppercase;
+  font-size: 12pt;
+  display: flex;
+  background-color: #00311a;
+  color: #eeeeee;
+  padding: 20px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.welcome {
+  margin-top: 15px;
+  font-family: "Arial";
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.welcome-title {
+  font-size: 50pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.footer {
+  font-family: "Arial";
+  text-transform: uppercase;
+  font-size: 12pt;
+  display: flex;
+  background-color: #00311a;
+  color: #eeeeee;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aboutme {
+  margin-top: 12pt;
+  font-family: "Arial";
+  text-align: center;
+  color: #00311a;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.category-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.recipe {
+  padding: 5pt;
+}
+.recipes-title {
+  font-family: "Arial";
+  font-size: 14pt;
+  color: #023a02;
+  text-align: center;
+}
+.description {
+  margin-top: 16pt;
+  font-size: 16pt;
+  font-family: "Arial";
+  text-align: center;
+  color: #00311a;
+}
+.pictures {
+  text-align: center;
+}
+.pictures img {
+  rotate: 90deg;
+  width: 50%;
+}
+.splitview-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  box-sizing: border-box;
+  color: #3f7a3f;
+  font-family: "Arial";
+  font-size: 12pt;
+}
+.splitview-first {
+  margin-right: 20pt;
+}
+.ingredientTitle {
+  font-family: "Arial";
+  font-size: 12pt;
+  text-align: left;
+}
+.ingredientAmount {
+  font-family: "Arial";
+  font-size: 12pt;
+  text-align: left;
+  color: #3f7a3f;
+}
+.ingredientText {
+  font-family: "Arial";
+  font-size: 12pt;
+  text-align: left;
+  color: #3f7a3f;
+  font-weight: normal;
+}
+.preparationStep {
+  padding-bottom: 5pt;
+}
+@media screen and (max-width: 400px) {
+  body {
+    .top-header {
+      font-size: 20pt;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    .top-header {
+      font-size: 40pt;
+    }
+  }
+}
+label {
+  display: block;
+  margin: 20px;
+}
+select {
+  width: 30%;
+}
+button {
+  width: 30%;
+}
+form {
+  margin-top: 50px;
+  color: #3f7a3f;
+  font-family: "Arial";
+  font-size: 12pt;
+}
+input {
+  padding: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  font-size: 12pt;
+}
+.searchfield {
+  text-align: center;
+}
+button {
+  background-color: whitesmoke;
+  width: auto;
+  font-size: 12pt;
+  padding: 20px;
+  border-color: whitesmoke;
+  text-align: start;
+}
+.commentcontainer {
+  color: #3f7a3f;
+  width: 100%;
+  padding: 10px;
+  font-family: "Arial";
+  font-size: 12pt;
+}
+.comment1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10pt;
+}
+.comment2 {
+  display: flex;
+}
+.commentblock {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: justify;
+  width: 350;
+}
+.commentname {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-shadow: #00311a;
+  font-weight: bold;
+}
+.commentparagraph {
+  display: flex;
+}
