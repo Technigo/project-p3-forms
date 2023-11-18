@@ -4,19 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="header">
       <h1 class="top-header">Recipes</h1>
     </div>
     <div class="search">
-      <label>
-        <input
-          class="filter-search"
-          placeholder="search for recipes or ingredients"
-          id="search"
-        />
-      </label>
+      <input
+        class="searchfield"
+        type="text"
+        onkeyup="search()"
+        placeholder="search for recipes"
+        id="search"
+      />
     </div>
     <div class="category">
       <div class="category-row">

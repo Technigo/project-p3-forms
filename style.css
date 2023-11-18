@@ -166,6 +166,9 @@ a {
     .top-header {
       font-size: 20pt;
     }
+    .welcome-title {
+      font-size: 20pt;
+    }
   }
 }
 @media screen and (max-width: 700px) {
