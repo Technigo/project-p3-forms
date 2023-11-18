@@ -1,29 +1,21 @@
-var inputId = "filter-search";
-var itemsData = "ingredientsList";
-var displaySet = false;
-var displayArr = [];
+function search() {
+  var searchText = document.getElementById("search").value.toLowerCase();
+  var recipeTitles = document.getElementsByClassName("recipe");
 
-function getDisplayType(element) {
-  var elementStyle =
-    element.currentStyle || window.getComputedStyle(element, "");
-  return elementStyle.display;
-}
+  for (var i = 0; i < recipeTitles.length; i++) {
+    // Get the text content of the current recipe title
+    var title = recipeTitles[i].textContent.toLowerCase();
 
-document.getElementById(inputId).onkeyup = function () {
-  var searchVal = this.value.toLowerCase();
-  var filterItems = document.querySelectorAll("[" + itemsData + "]");
+    // Get the parent recipe element
+    var recipe = recipeTitles[i].closest(".recipe");
 
-  for (var i = 0; i < filterItems.length; i++) {
-    if (!displaySet) {
-      displayArr.push(getDisplayType(filterItems[i]));
-    }
-
-    filterItems[i].style.display = "none";
-
-    if (filterItems[i].getAttribute("filter-value").indexOf(searchVal) >= 0) {
-      filterItems[i].style.display = displayArr[i];
+    // Check if the search text is present in the title
+    if (title.includes(searchText)) {
+      // If the search text is present, show the recipe
+      recipe.style.display = "";
+    } else {
+      // If not present, hide the recipe
+      recipe.style.display = "none";
     }
   }
-
-  displaySet = true;
-};
+}
