@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aboutme</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="aboutme" id="aboutme">
+      <img src="./images/me.jpg" alt="me" style="width: 50%" />
+      <p>
+        I am from vietnam and a food lover. In our cuture, we love to have meal
+        with family and share all what we have on the table. I always looking
+        for good recipes to suprise my family. During my trip in 2016, I could
+        have a look in other kitchen around the world and could take a lot of
+        inspriration with me.
+      </p>
+    </div>
+    <div class="aboutme" id="contact">
+      <p>HGAET, Flowerstreet 10, 9999 Churchmountain</p>
+    </div>
+    <div>
+      <form name="message" method="post" netlify>
+        <h2 class="detail-header">Contact me</h2>
+        <label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+            maxlength="8"
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="mail"
+            placeholder="Mailadress"
+            required
+            maxlength="20"
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="message"
+            placeholder="Message"
+            required
+            maxlength="500"
+          />
+        </label>
+        <label>
+          <button type="submit" name="post">Submit</button>
+        </label>
+      </form>
+    </div>
+  </body>
+</html>
